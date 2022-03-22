@@ -1,0 +1,68 @@
+.companies-all-content{
+    padding-top: 10%;
+}
+
+.companies-text{
+    text-align: center;
+font-size: 50px;
+}
+
+.companies-all-table{
+    padding: 2%;
+}
+
+.company-sttng{
+    padding: 3%;
+    margin-top: 5px;
+    display: flex;
+    height: 100%;
+    border: 2px;
+}
+
+.company-sttng:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.cmpny-text{
+    padding: 0.5%;
+    width: 100%;
+    
+}
+
+.company-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.company-title{
+    float: left;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    width: 150px;
+    padding-left: 1%;
+}
+
+.company-contnt{
+    font-size: medium;
+}
+
+.company-name{
+    padding-left: 1%;
+    color: blue;
+    font-weight: bolder;
+    float: left;
+    width: 150px;
+}
+
+.company-name-contnt{
+    color: rgb(110, 110, 172);
+    font-weight: bold;
+}
+
+.border{
+    border-style: ridge !important;
+    border: 1.8px;
+}
+

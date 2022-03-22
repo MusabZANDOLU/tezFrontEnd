@@ -1,0 +1,35 @@
+.login-cover{
+    text-align: center;
+    padding-top: 10%;
+    width: 300px;
+}
+
+.login-title{
+
+}
+
+.login-content{
+    display: block;
+}
+
+.inputs{
+    padding: 1%;
+}
+
+.login-content input{
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-content input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.login-footer{
+text-align: center;
+}
+
