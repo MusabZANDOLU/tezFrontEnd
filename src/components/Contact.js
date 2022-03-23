@@ -17,11 +17,11 @@ function Contact() {
           </div>
           <div className="icons-container">
             <div className='contact-icons'>
-              <div class="social-icons spinned">
-                <a className="item facebook" target={"_blank"} href="https://www.facebook.com/"><em class="fa fa-facebook"></em></a>
-                <a className="item twitter" target={"_blank"} href="https://twitter.com/"><em className="fa fa-twitter"></em></a>
-                <a className="item linkedin" target={"_blank"} href="https://www.linkedin.com/"><em className="fa fa-linkedin"></em></a>
-                <a className="item instagram" target={"_blank"} href="https://www.instagram.com/"><em className="fa fa-instagram"></em></a>
+              <div className="social-icons spinned">
+                <a className="item facebook" href="https://www.facebook.com/"><em className="fa fa-facebook"></em></a>
+                <a className="item twitter" href="https://twitter.com/"><em className="fa fa-twitter"></em></a>
+                <a className="item linkedin" href="https://www.linkedin.com/"><em className="fa fa-linkedin"></em></a>
+                <a className="item instagram" href="https://www.instagram.com/"><em className="fa fa-instagram"></em></a>
               </div>
             </div>
           </div>

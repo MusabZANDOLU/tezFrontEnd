@@ -185,7 +185,7 @@ function slider() {
             <div className="categori-col">
               <h3>1. Adım</h3>
               <p>Öncelikle sitemize giriş yapmadıysanız lütfen giriş yapın...</p>
-              <a href='login' class="log-bttn">Giriş Yap</a>
+              <a href='login' className="log-bttn">Giriş Yap</a>
 
             </div>
             <div className="categori-col">
