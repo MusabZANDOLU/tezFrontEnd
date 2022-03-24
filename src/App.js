@@ -9,7 +9,6 @@ import Offers from './components/Offers';
 import Companies from './components/Companies';
 import Products from './components/Products';
 import Login from './components/Login';
-import GetOfferSteps from './components/GetOfferSteps';
 
 export default function App() {
   return (
@@ -23,7 +22,6 @@ export default function App() {
         <Route path='/offers' element={<Offers />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
-        <Route exact path='/getOffer/:getOfferSteps' component={GetOfferSteps}/>
       </Routes>
     </Router>
   )

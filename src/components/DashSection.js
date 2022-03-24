@@ -139,7 +139,7 @@ function slider() {
           <div className='iceriks'>
             <div>
               <div className='icerik-baslik-1'>Kaliteli Hizmet</div>
-              <div className='icerik-1'>Tecrübeli firmalarımız sayesinde işinizi en kolay ve temiz şekilde yaptırabileceksiniz. Kalite ve hizmeti sizlere yan yana sunuyoruz.</div>
+              <div className='icerik-1'>Tecrübeli firmalarımız sayesinde işinizi temiz ve en kolay şekilde yaptırabileceksiniz. Kalite ve hizmeti sizlere yan yana sunuyoruz.</div>
             </div>
             <div>
               <img className='icerik-resim-1' src={require('../assets/images/dashboard/isci-cizim.jpg')} alt=''></img>
@@ -152,7 +152,7 @@ function slider() {
             </div>
             <div>
               <div className='icerik-baslik-2'>Zamandan Kazan</div>
-              <div className='icerik-2'>Aradığın hizmet için dükkan dükkan dolaşmak ya da aracı aramakla uğraşma. Siz isteğinizi belirtin biz size seçdirelim.</div>
+              <div className='icerik-2'>Aradığın hizmet için dükkan dükkan dolaşmak ya da aracı aramakla uğraşmayın. Siz isteğinizi belirtin biz size seçdirelim.</div>
             </div>
           </div>
 

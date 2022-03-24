@@ -11,7 +11,7 @@ function Companies() {
   return (
     <div>
       <Navbar />
-      
+
       <div className='companies-all-content'>
         <div className='companies-text'>Firmalarımız</div>
         <hr />
@@ -38,11 +38,11 @@ function Companies() {
               </div>
               <div className='border'>
                 <div className='company-title'>Adres</div>
-                <div className='company-contnt'>İstanbul / Türkiye</div>
+                <div className='company-contnt'>Küçükçekmece / İstanbul</div>
               </div>
               <div className='border'>
                 <div className='company-title'>Verilen hizmetler</div>
-                <div className='company-contnt'>katlanır cam, otomatik kepeng, dyuşakabin, alüminyum doğrama</div>
+                <div className='company-contnt'>Katlanır Cam, Otomatik Kepenk, Duş Kabini, Alüminyum Pencere</div>
               </div>
             </div>
           </div>
@@ -69,42 +69,11 @@ function Companies() {
               </div>
               <div className='border'>
                 <div className='company-title'>Adres</div>
-                <div className='company-contnt'>İstanbul / Türkiye</div>
+                <div className='company-contnt'>Mamak / Ankara</div>
               </div>
               <div className='border'>
                 <div className='company-title'>Verilen hizmetler</div>
-                <div className='company-contnt'>katlanır cam, otomatik kepeng, dyuşakabin, alüminyum doğrama</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='companies-all-table'>
-          <div className='company-sttng'>
-            <img className='company-logo' src='' alt='' />
-            <div className='cmpny-text'>
-              <div className='border'>
-                <div className='company-name'>Firma Adı</div>
-                <div className='company-name-contnt'>Ege Pen</div>
-              </div>
-              <div className='border'>
-                <div className='company-title'>Firma Yetkilisi</div>
-                <div className='company-contnt'>Mehmet EGE</div>
-              </div>
-              <div className='border'>
-                <div className='company-title'>Telefon</div>
-                <div className='company-contnt'>0550050000</div>
-              </div>
-              <div className='border'>
-                <div className='company-title'>E-posta</div>
-                <div className='company-contnt'>ege@deneme.com</div>
-              </div>
-              <div className='border'>
-                <div className='company-title'>Adres</div>
-                <div className='company-contnt'>İstanbul / Türkiye</div>
-              </div>
-              <div className='border'>
-                <div className='company-title'>Verilen hizmetler</div>
-                <div className='company-contnt'>katlanır cam, otomatik kepeng, dyuşakabin, alüminyum doğrama</div>
+                <div className='company-contnt'>Katlanır Cam, Otomatik Kepenk, Duş Kabini, Alüminyum Pencere</div>
               </div>
             </div>
           </div>
