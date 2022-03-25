@@ -28,9 +28,9 @@ function Login() {
           <div className="fadeIn first">
           </div>
           <form>
-            <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="login" />
-            <input type="text" id="password" className="fadeIn third login-input" name="login" placeholder="password" />
-            <input type="submit" className="fadeIn fourth login-input" value="Log In" />
+            <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="E-posta" />
+            <input type="text" id="password" className="fadeIn third login-input" name="login" placeholder="Şifre" />
+            <input type="submit" className="fadeIn fourth login-input" value="Giriş" />
           </form>
           <div id="formFooter">
           </div>
@@ -47,9 +47,9 @@ function Login() {
             </select>
             <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="Ad" />
             <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="Soyad" />
-            <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="Eposta" />
+            <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="E-posta" />
             <input type="text" id="password" className="fadeIn third login-input" name="login" placeholder="Şifre" />
-            <input type="submit" className="fadeIn fourth login-input" value="Log In" />
+            <input type="submit" className="fadeIn fourth login-input" value="Kaydet" />
           </form>
           <div id="formFooter">
           </div>
