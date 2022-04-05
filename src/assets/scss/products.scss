@@ -17,6 +17,7 @@
 .product-cover{
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .product-sttng{
@@ -25,11 +26,13 @@
   height: 100%;
   border: 2px;
   width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .product-sttng:hover{
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
-  border-radius: 30px;
+  border-radius: 15px;
   transition: 0.5s;
 }
 
@@ -78,3 +81,7 @@
   width: 100%;
 }
 
+.prod-url{
+  text-align: right;
+  margin: 5px;
+}
