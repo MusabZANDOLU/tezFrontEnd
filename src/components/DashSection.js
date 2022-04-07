@@ -1,16 +1,28 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
+import 'react-multi-carousel/lib/styles.css';
 import '../assets/scss/dashSection.scss';
 import '../assets/scss/search.scss';
 
 
 function slider() {
+//   $( document ).ready(function() {
+//     $('.select-list').click(function(e){
+//         let btn = $(e.target);
+//         let checkbox = $('input[name="select"]', btn);
+
+//         btn.toggleClass('active');
+//         if(checkbox.is(':checked'))
+//             checkbox.removeAttr('checked')
+//         else
+//             checkbox.attr('checked', 'checked')
+//     });
+// });
 
   const responsive = {
     desktop: {

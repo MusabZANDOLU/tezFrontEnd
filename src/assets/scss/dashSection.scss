@@ -34,10 +34,6 @@ nav{
     
 }
 
-.nav-links:hover{
-    opacity: 100;
-}
-
 .nav-links{ /*Navbar sabit kalması için*/
     flex: 1;
     text-align: left;
@@ -47,9 +43,15 @@ nav{
     width: 100%;
     top: 0;
     background-color: rgb(29, 28, 28);
-    opacity: 80%;
+    opacity: 90%;
     z-index: 999;
     height: 60px;
+}
+
+.nav-links:hover{
+    opacity: 100;
+    background-color: black;
+    transition: 1s;
 }
 
 .nav-links ul li{
@@ -61,11 +63,10 @@ nav{
 }
 
 .nav-links ul li a{
-    padding: 15px;
-    color: rgb(143, 142, 142);
+    padding: 8px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 13px;
-    font-weight: bold;
 }
 
 .nav-links ul li::after{ /* navbar altındaki çizgi */

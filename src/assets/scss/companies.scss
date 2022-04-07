@@ -25,12 +25,18 @@
     border: 2px;
     border: 1px solid;
     border-radius: 5px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
 
 .company-sttng:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    transition: 0.5s;
+    // box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 20px 10px rgb(62, 55, 78, 0.9);
+    border-start-start-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: 0.8s;
+    top: -10px;
 }
 
 .cmpny-text{

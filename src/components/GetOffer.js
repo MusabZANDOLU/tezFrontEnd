@@ -1,10 +1,14 @@
+import React from 'react'
+
+import Navbar from '../components/Navbar';
+
 import '../assets/scss/getOffer.scss';
 
-import React from 'react'
 
 export default function GetOffer() {
   return (
     <div>
+      <Navbar/>
       
     </div>
   )

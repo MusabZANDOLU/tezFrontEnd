@@ -204,6 +204,7 @@ function Companies() {
           </div>
         </div>
       </div>
+      
       <Footer />
     </div>
   )

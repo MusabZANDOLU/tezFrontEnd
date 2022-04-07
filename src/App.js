@@ -9,6 +9,7 @@ import Offers from './components/Offers';
 import Companies from './components/Companies';
 import Products from './components/Products';
 import Login from './components/Login';
+import UserSetting from './components/UserSetting';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path='/getOffer' element={<GetOffer />} />
         <Route path='/offers' element={<Offers />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/userSettings' element={<UserSetting />} />
         <Route path='/login' element={<Login />} />
       </Routes>
     </Router>
