@@ -1,42 +1,36 @@
-import React from 'react'
+import React from "react";
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from "../components/Navbar";
+// import Footer from '../components/Footer'
 
-import '../assets/scss/userSettings.scss'
+import "../assets/scss/userSettings.scss";
 
 function UserSetting() {
   return (
-    <div className='UserSettingAll'>
+    <div className="setting-all-div">
       <Navbar />
+      <div className="set-flex">
         <div>
-        <div class="select-list">
-        <input type="checkbox" name="select" id="select1" hidden/>
-        Öğe 1
-    </div>
-    <div class="select-list">
-        <input type="checkbox" name="select" id="select2" hidden/>
-        Öğe 2
-    </div>
-    <div class="select-list">
-        <input type="checkbox" name="select" id="select3" hidden/>
-        Öğe 3
-    </div>
-    <div class="select-list">
-        <input type="checkbox" name="select" id="select4" hidden/>
-        Öğe 4
-    </div>
-    <div class="select-list">
-        <input type="checkbox" name="select" id="select5" hidden/>
-        Öğe 5
-    </div>
-    <div class="select-list">
-        <input type="checkbox" name="select" id="select6" hidden/>
-        Öğe 6
-    </div>
+          <div className="setting-text">Ayarlar</div>
+          <div>Kullanıcı adı</div>
+          <div>Eposta</div>
+          <div>Şifre</div>
+          <div>Adres</div>
         </div>
-      {/* <Footer /> */}
+        <div>
+          <div className="settings-input">
+            <input className="settings-input-in" type="text" />
+          </div>
+          <div className="settings-input">
+            <input className="settings-input-in" type="text" />
+          </div>
+          <div className="settings-input">
+            <input className="settings-input-in" type="text" />
+          </div>
+        </div>
+      </div>
+      {/* <Footer/> */}
     </div>
-  )
+  );
 }
 export default UserSetting;

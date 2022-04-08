@@ -1,22 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import $ from 'jquery'; 
-
 import '../assets/scss/login.scss'
 
 function onClickSignUp() {
-  $('#loginTab').hide();
-  $('#registerTab').show();
+  var logintab = document.querySelector('#loginTab')
+  logintab.style.display = 'none'
+  var registerTab = document.querySelector('#registerTab')
+  registerTab.style.display = 'block'
+  var h2_2 = document.querySelector('.h2-class:nth-child(2)')
+  var h2 = document.querySelector('.h2-class:nth-child(1)')
+  h2_2.classList.add('active')
+  h2.classList.remove('active')
+  h2.classList.add('inactive')
+  h2_2.classList.remove('inactive')
 }
 
 function onClickLogin() {
-  $('#loginTab').show();
-  $('#registerTab').hide();
+  var logintab = document.querySelector('#loginTab')
+  logintab.style.display = 'block'
+  var registerTab = document.querySelector('#registerTab')
+  registerTab.style.display = 'none'
+  var h2_2 = document.querySelector('.h2-class:nth-child(2)')
+  var h2 = document.querySelector('.h2-class:nth-child(1)')
+  console.log(h2)
+  h2_2.classList.add('inactive')
+  h2.classList.remove('inactive')
+  h2.classList.add('active')
+  h2_2.classList.remove('active')
 }
 
 function Login() {
-  $('#registerTab').hide();
   return (
     <div>
       <div className='log-link'><Link to='/'><i class="fa-solid fa-house"></i> Ana sayfa</Link></div>
@@ -41,10 +55,11 @@ function Login() {
           <div className="fadeIn first">
           </div>
           <form>
-            <select className='log-combo' placeholder='Üye tipinizi seçiniz'>
+            {/* <select className='log-combo' placeholder='Üye tipinizi seçiniz'>
               <option value="user">Kullanıcı</option>
               <option value="company">Firma</option>
-            </select>
+            </select> */}
+            
             <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="Ad" />
             <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="Soyad" />
             <input type="text" id="login" className="fadeIn second login-input" name="login" placeholder="E-posta" />

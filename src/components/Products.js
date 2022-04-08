@@ -37,7 +37,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Bronz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -87,7 +87,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -112,7 +112,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -137,7 +137,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -187,7 +187,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -212,7 +212,7 @@ export default function Products() {
                                     <div className='product-contnt'>Şeffaf, Filmli</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -237,7 +237,7 @@ export default function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='comp-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='comp-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
@@ -254,7 +254,7 @@ export default function Products() {
                                     <div className='product-contnt'>Pencere & Kapı Kolları, Duşakabin Kolları, Cam Karolajları</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
                         </div>
                     </div>
 
