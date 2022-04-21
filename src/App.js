@@ -13,7 +13,6 @@ import UserSetting from './components/UserSetting';
 
 export default function App() {
   return (
-
     <Router>
       <Routes>
         <Route path='/' element={<Section />} />

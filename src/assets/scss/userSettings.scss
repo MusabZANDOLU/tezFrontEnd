@@ -1,9 +1,16 @@
 .setting-all-div{
     background-color: #ecf0f3;
+    height: 100vh;
+}
+
+.setting-all-comp{
+    padding: 15vh;
 }
 
 .settings-input{
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .settings-input-in{
@@ -14,14 +21,8 @@
       4px 4px 4px 0px #d1d9e6 inset,
       -4px -4px 4px 0px #ffffff inset;
     margin: 1%;
-    width: 800px;
+    width: 600px;
     font-size: 15px;
-}
-
-.set-flex{
-    padding-top: 10%;
-    display: flex;
-    padding-left: 2%;
 }
 
 .setting-text{
@@ -29,4 +30,9 @@
     font-weight: bold;
     text-align: left;
     margin-top: -5%;
+}
+
+.set-title{
+    width: 100px;
+    text-align: right;
 }

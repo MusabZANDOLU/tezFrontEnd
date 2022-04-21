@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
@@ -18,9 +17,9 @@ function slider() {
       <section className="header">
         <div>
           <h3 className='search-text'>Teklif almak istediğiniz ürünü giriniz.</h3>
-          <div className="container">
-            <input type="text" placeholder="Ara..." />
-            <div className="search"></div>
+          <div className="container-search">
+            <input className='search-input' type="text" placeholder=" Ara..." />
+            <div className="search1"></div>
           </div>
         </div>
       </section>
@@ -42,13 +41,13 @@ function slider() {
               <div className='icerik-1'>Tecrübeli firmalarımız sayesinde işinizi temiz ve en kolay şekilde yaptırabileceksiniz. Kalite ve hizmeti sizlere yan yana sunuyoruz.</div>
             </div>
             <div>
-              <img className='icerik-resim-1' src={require('../assets/images/dashboard/isci-cizim.jpg')} alt=''></img>
+              <img className='icerik-resim-1' src={require('../assets/images/dashboard/isci-cizim.png')} alt=''></img>
             </div>
           </div>
 
           <div className='iceriks'>
             <div>
-              <img className='icerik-resim-2' src={require('../assets/images/dashboard/zaman-kazanmak.jpg')} alt=''></img>
+              <img className='icerik-resim-2' src={require('../assets/images/dashboard/zaman-kazanmak.png')} alt=''></img>
             </div>
             <div>
               <div className='icerik-baslik-2'>Zamandan Kazan</div>
@@ -62,13 +61,13 @@ function slider() {
               <div className='icerik-1'>Gönül rahatlığıyla hizmet almanız için işleriniz garantimiz altındadır. Güvenli ve kaliteli çalışma herkesin hakkı...</div>
             </div>
             <div>
-              <img className='icerik-resim-1' src={require('../assets/images/dashboard/shaking-hands.jpg')} alt=''></img>
+              <img className='icerik-resim-1' src={require('../assets/images/dashboard/shaking-hands.png')} alt=''></img>
             </div>
           </div>
 
           <div className='iceriks'>
             <div>
-              <img className='icerik-resim-2' src={require('../assets/images/dashboard/deneme1.jpg')} alt=''></img>
+              <img className='icerik-resim-2' src={require('../assets/images/dashboard/laptop.png')} alt=''></img>
             </div>
             <div>
               <div className='icerik-baslik-2'>Kolayca Kullan</div>

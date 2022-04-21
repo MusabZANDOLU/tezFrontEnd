@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Link } from 'react-router-dom';
 
@@ -36,10 +36,10 @@ export default function carousel() {
                 keyBoardControl={true}
                 customTransition="all 4"
                 // transitionDuration={1000}
-                containerClass="carousel-container"
+                containerClassName="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-5-px">
+                dotListClassName="custom-dot-list-style"
+                itemClassName="carousel-item-padding-5-px">
 
                 <div className='slider-edit'>
                     <div className="product-col">
@@ -73,7 +73,7 @@ export default function carousel() {
                         <img src={require('../assets/images/slider/dusakabin.jpg')} alt='' />
                         <div className="layers">
                             <h3>Duşakabin Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
+                            {/* <a className='urun-detay-buton' href="/products">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>

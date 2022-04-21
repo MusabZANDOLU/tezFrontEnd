@@ -113,7 +113,7 @@
     background-color: #c2bebe;
     border: none;
     color: #0d0d0d;
-    padding: 15px 32px;
+    padding: 15px 1px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -188,33 +188,33 @@
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
   
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
   }
   
   .fadeIn.first {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .fadeIn.second {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     animation-delay: 0.4s;
   }
   
-  .fadeIn.second {
+  .fadeIn.third {
     -webkit-animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     animation-delay: 0.6s;
   }
   
-  .fadeIn.third {
+  .fadeIn.fourth {
     -webkit-animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
-  }
-  
-  .fadeIn.fourth {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
   }
   
   .underlineHover:after {
@@ -244,9 +244,23 @@
     width:60%;
   }
   
-  .log-combo{
-    width: 50%;
+  .log-combox{
     text-align: center;
+    font-size: 16px;
+    width: 200px;
+    border-radius:6px;
+    background-color: #c2bebe;
+    height: 25px;
+  }
+
+  .log-combo:hover{
+    background-color: white;
+    transition: 0.5s;
+  }
+
+  .log-combo-box{
+    border-radius: 10px;
+    color: #8a8989;
   }
 
   .d-none {

@@ -1,20 +1,16 @@
-import React from 'react'
-
+import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-
 import '../assets/scss/products.scss';
 
-
-export default function Products() {
+function Products() {
     return (
         <div>
             <Navbar />
             <div className='products-all-content'>
                 <div className='products-text'>Tüm Ürünlerimiz</div>
                 <hr />
-
                 <div className='product-cover'>
                     <div className='products-all-table'>
                         <div className='product-sttng'>
@@ -93,7 +89,7 @@ export default function Products() {
 
                     <div className='products-all-table'>
                         <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/celik-kapilar.jpg')} alt='' />
+                            <img className='product-logo' src={require('../assets/images/product/celik-kapilar.png')} alt='' />
                             <div className='prdct-text'>
                                 <div className='borders'>
                                     <div className='product-name'>Ürün Adı</div>
@@ -118,7 +114,7 @@ export default function Products() {
 
                     <div className='products-all-table'>
                         <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/panjur-kepeng.jpg')} alt='' />
+                            <img className='product-logo' src={require('../assets/images/product/panjur-kepeng.png')} alt='' />
                             <div className='prdct-text'>
                                 <div className='borders'>
                                     <div className='product-name'>Ürün Adı</div>
@@ -143,7 +139,7 @@ export default function Products() {
 
                     <div className='products-all-table'>
                         <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/dusakabin.jpg')} alt='' />
+                            <img className='product-logo' src={require('../assets/images/product/dusakabin.png')} alt='' />
                             <div className='prdct-text'>
                                 <div className='borders'>
                                     <div className='product-name'>Ürün Adı</div>
@@ -264,3 +260,4 @@ export default function Products() {
         </div>
     )
 }
+export default Products;

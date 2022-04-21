@@ -39,6 +39,7 @@ nav{
 
 .nav-links{ /*Navbar sabit kalması için*/
     flex: 1;
+    align-items: center;
     text-align: left;
     display: flex;
     justify-content: space-between;

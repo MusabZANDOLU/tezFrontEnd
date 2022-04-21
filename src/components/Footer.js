@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import '../assets/scss/footer.scss'
+import '../assets/scss/footer.scss';
 
 function footer() {
+  
   return (
     <div>
       <section className="footer">

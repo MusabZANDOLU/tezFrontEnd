@@ -1,7 +1,5 @@
-import React from 'react'
-
+import React from 'react';
 import Navbar from '../components/Navbar';
-
 import '../assets/scss/contact.scss';
 
 function Contact() {
