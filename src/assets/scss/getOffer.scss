@@ -1,5 +1,21 @@
 .getOfferBody{
   background-color: #ecf0f3;
+  
+}
+
+.getOfferShoppingAll{
+  background-color: #ecf0f3;
+  height: 100vh;
+}
+
+.getOfferShowerBoxContent{
+  background-color: #ecf0f3;
+  height: 100vh;
+}
+
+.getOfferPvcContent{
+  background-color: #ecf0f3;
+  height: 100vh;
 }
 
 .UserSettingAll{
@@ -17,6 +33,17 @@
       4px 4px 4px 0px #d1d9e6 inset,
       -4px -4px 4px 0px #ffffff inset;
     margin: 2%;
+  }
+
+  .radiogroupPrev {
+    padding: 25px 30px;
+    border-radius: 16px;
+    background: #ecf0f3;
+    box-shadow:
+      4px 4px 4px 0px #d1d9e6 inset,
+      -4px -4px 4px 0px #ffffff inset;
+    margin: 2%;
+    width: 500px;
   }
   
   
@@ -39,7 +66,7 @@
     color: #394a56;
   }
   
-  .text {
+  .textOfferCss {
     margin-left: 16px;
     opacity: .8;
     transition: opacity .2s linear, transform .3s ease-out;
@@ -47,6 +74,19 @@
     font-size: 22px;
   }
   
+.textPrev{
+  font-size: 18px;
+  text-align: start;
+  font-weight: bolder;
+  width: 160px;
+  color: rgb(35, 36, 102);
+}
+
+.tik{
+  font-size: 21px;
+  color: rgb(47, 100, 45);
+}
+
   .indicator {
     position: relative;
     border-radius: 50%;
@@ -56,11 +96,6 @@
       -8px -4px 8px 0px #ffffff,
       8px 4px 12px 0px #d1d9e6;
     overflow: hidden;
-  }
-
-  .tik{
-    font-size: 23px;
-    color: black;
   }
   
   .indicator::before,
@@ -104,10 +139,10 @@
   }
 
   .getoffer-text{
-    text-align: left;
     font-weight: bolder;
-    font-size: 25px;
-    
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
   }
 
   // ---------------------------------------------------------------
@@ -153,6 +188,7 @@
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
+    border-radius: 5px;
   }
   .getOffer-input{
     padding: 18px 35px;
@@ -177,3 +213,28 @@
     margin: 2%;
   }
 
+  .linkShop{
+    padding-bottom: 5%;
+  }
+
+  .getOfferLinkButton {
+    background: none;
+    border: 1px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    text-decoration: none;
+  }
+
+  .getOfferLinkButton {  
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: rgb(236, 236, 245);
+      background-color: rgb(37, 37, 37);
+    }
+  }

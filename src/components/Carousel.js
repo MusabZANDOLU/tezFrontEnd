@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Link } from 'react-router-dom';
 
-export default function carousel() {
+function carousel() {
 
     const responsive = {
         desktop: {
@@ -109,3 +109,4 @@ export default function carousel() {
         </div>
     )
 }
+export default carousel;

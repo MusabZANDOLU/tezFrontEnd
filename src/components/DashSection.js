@@ -11,20 +11,20 @@ import '../assets/scss/search.scss';
 function slider() {
 
   return (
-    <div className='all-dash'>
+    <div className='allDash'>
       <Navbar />
 
       <section className="header">
         <div>
-          <h3 className='search-text'>Teklif almak istediğiniz ürünü giriniz.</h3>
-          <div className="container-search">
-            <input className='search-input' type="text" placeholder=" Ara..." />
+          <h3 className='searchText'>Teklif almak istediğiniz ürünü giriniz.</h3>
+          <div className="containerSearch">
+            <input className='searchInput' type="text" placeholder=" Ara..." />
             <div className="search1"></div>
           </div>
         </div>
       </section>
 
-      <div className='dash-prdct-text'>Hizmet Verdiğimiz Ürünler</div>
+      <div className='dashProductText'>Hizmet Verdiğimiz Ürünler</div>
       <hr />
 
       <div className='sliderClass'>
@@ -33,7 +33,7 @@ function slider() {
 
         {/* -------------------------------siteyle alakalı bilgiler (icerik)------------------------------- */}
 
-        <div className='icerik-all'>
+        <div className='icerikAll'>
 
           <div className='iceriks'>
             <div>

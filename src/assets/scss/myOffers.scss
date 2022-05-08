@@ -1,0 +1,101 @@
+.myOfferBody{
+  background-color: #ecf0f3;
+  height: 100%;
+}
+
+.myOfferTopText{
+text-align: center;
+padding-top: 5%;
+font-size: 25px;
+}
+
+.myOfferAllModal{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+.myOfferAll{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5% ;
+}
+
+.radiogroupMyOffer {
+  padding: 15px 15px;
+  background: #ecf0f3;
+  box-shadow:
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+  margin: 1%;
+  width: 45%;
+  border-radius: 5px;
+}
+
+.myOfferBtnContent{
+  display: flex;
+  align-items: flex-end;
+}
+
+.myOfferBtn{
+  width: 25%;
+  margin: 2%;
+  background-color: rgb(37, 95, 42);
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.myOfferBtn:hover{
+  margin: 2%;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: rgb(108, 173, 82);
+  transition: 0.7s;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.myOfferBtnDel{
+  width: 25%;
+  margin: 2%;
+  background-color: rgb(182, 32, 32);
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.myOfferBtnDel:hover{
+  margin: 2%;
+  background-color: rgb(6, 7, 3);
+  transition: 0.7s;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.myOfferTitle{
+  display: flex;
+}
+
+.labelMyOfferLeft{
+  font-size: 15px;
+  color: blue;
+  width: 20%;
+}
+.labelMyOfferRight{
+  text-align: start;
+  width: 80%;
+}

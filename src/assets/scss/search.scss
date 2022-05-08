@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
 
-.search-text{
+.searchText{
   position: absolute;
   margin: auto;
   top: 0;
@@ -12,7 +12,7 @@
   color: white;
 }
 
-.container-search {
+.containerSearch {
   position: absolute;
   margin: auto;
   top: 0;
@@ -67,7 +67,7 @@
       transition: all .5s;
     }
   }
-  .search-input {
+  .searchInput {
     font-family: 'Inconsolata', monospace;
     position: absolute;
     margin: auto;
