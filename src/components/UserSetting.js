@@ -1,15 +1,14 @@
 import React from "react";
-
 import Navbar from "../components/Navbar";
-// import Footer from '../components/Footer';
-
 import "../assets/scss/userSettings.scss";
 
 function UserSetting() {
+  
   return (
     <div className="setting-all-div">
       <Navbar />
-      <div className="setting-all-comp">
+      <div className="settingCard">
+        <div className="setting-all-comp">
           <div className="settings-input">
             <div className="set-title">Ad</div><input className="settings-input-in" type="text" />
           </div>
@@ -25,8 +24,9 @@ function UserSetting() {
           <div className="settings-input">
             <div className="set-title">şifre</div><input className="settings-input-in" type="text" />
           </div>
+          <button>güncelle</button>
+        </div>
       </div>
-      {/* <Footer/> */}
     </div>
   );
 }

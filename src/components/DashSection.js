@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
-
 import 'react-multi-carousel/lib/styles.css';
 import '../assets/scss/dashSection.scss';
 import '../assets/scss/search.scss';
@@ -16,11 +16,12 @@ function slider() {
 
       <section className="header">
         <div>
-          <h3 className='searchText'>Teklif almak istediğiniz ürünü giriniz.</h3>
+          <h3 className='searchText'>Montek'e hoşgeldiniz. İstediğiniz ürün için kolayca teklif hazırlayıp fiyatları karşılaştırabilrsiniz.<br/><br/><br/> KALİTE VE GÜVEN HERKESİN HAKKI</h3>
+          {/* <h3 className='searchText'>Teklif almak istediğiniz ürünü giriniz.</h3>
           <div className="containerSearch">
             <input className='searchInput' type="text" placeholder=" Ara..." />
             <div className="search1"></div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -38,7 +39,7 @@ function slider() {
           <div className='iceriks'>
             <div>
               <div className='icerik-baslik-1'>Kaliteli Hizmet</div>
-              <div className='icerik-1'>Tecrübeli firmalarımız sayesinde işinizi temiz ve en kolay şekilde yaptırabileceksiniz. Kalite ve hizmeti sizlere yan yana sunuyoruz.</div>
+              <div className='icerik-1'>Tecrübeli firmalarımız sayesinde işinizi en kolay ve temiz şekilde yaptırabileceksiniz. Kalite ve hizmeti sizlere yan yana sunuyoruz.</div>
             </div>
             <div>
               <img className='icerik-resim-1' src={require('../assets/images/dashboard/isci-cizim.png')} alt=''></img>
@@ -58,7 +59,7 @@ function slider() {
           <div className='iceriks'>
             <div>
               <div className='icerik-baslik-1'>İşini Garantiye Al</div>
-              <div className='icerik-1'>Gönül rahatlığıyla hizmet almanız için işleriniz garantimiz altındadır. Güvenli ve kaliteli çalışma herkesin hakkı...</div>
+              <div className='icerik-1'>Gönül rahatlığıyla hizmet almanız için işleriniz garantimiz altındadır. Güvenli ve kaliteli çalışma herkesin hakkıdır.</div>
             </div>
             <div>
               <img className='icerik-resim-1' src={require('../assets/images/dashboard/shaking-hands.png')} alt=''></img>
@@ -75,28 +76,28 @@ function slider() {
             </div>
           </div>
 
-        </div>
         {/* -------------------------------teklif adımları kısmı------------------------------- */}
 
-        <section className="steps">
+        <div className="steps">
           <h1>NASIL TEKLİF ALIRIM?</h1>
+        </div><hr/>
           <div className="row">
             <div className="categori-col">
               <h3>1. Adım</h3>
-              <p>Öncelikle sitemize giriş yapmadıysanız lütfen giriş yapın...</p>
-              <a href='login' className="log-bttn">Giriş Yap</a>
+              <p>Öncelikle sitemize giriş yapmadıysanız lütfen giriş yapınız...</p>
+              <Link to='/login' className="log-bttn">Giriş Yap</Link>
 
             </div>
             <div className="categori-col">
               <h3>2. Adım</h3>
-              <p>Teklif Al sekmesine gidip istediğiniz ürünü seçiniz.İstenilen ürüne uygun adımları takip edip kolayca teklif verebilirsiniz.</p>
+              <p>Teklif Al sekmesine gidip istediğiniz ürün için montaj yeri ya da ürünü seçebilir ve istenilen ürüne uygun adımları takip edip kolayca teklif verebilirsiniz.</p>
             </div>
             <div className="categori-col">
               <h3>3. Adım</h3>
-              <p>Bizde işinin ehli insanları senle buluştururuz ve karşılaştırır ve seçersin.</p>
+              <p>Bizde işinin ehli insanları sizle buluşturuz. Sizde karşılaştırır ve seçersiniz.</p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
       <Footer />

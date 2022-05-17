@@ -1,10 +1,11 @@
 .ErrorPageAll {
   font-family: "Lato", sans-serif;
   height: 100vh;
-  color: rgb(61, 61, 61);
+  color: rgb(248, 248, 248);
   margin: 0;
   text-align: center;
-  background-image: url("../images/alum.jpg");
+  background-image: url("../images/err.jpg");
+  background-size: cover;
 }
 
 .err404 {
@@ -14,7 +15,7 @@
   font-weight: bold;
 }
 .errH2 {
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 @keyframes type {
@@ -73,7 +74,7 @@
   transition: all 0.3s ease;
 }
 .btn-16:hover {
-  color: rgb(73, 73, 73);
+  color: rgb(255, 254, 254);
   width: 200px;
   height: 70px;
 }
@@ -95,7 +96,7 @@
 .errorBtn {
   width: 150px;
   height: 50px;
-  color: rgb(73, 73, 73);
+  color: rgb(238, 238, 238);
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;

@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-import React from 'react'
-import Navbar from './Navbar'
-
-import '../assets/scss/getOfferCategory.scss'
+import React from 'react';
+import Navbar from './Navbar';
+import '../assets/scss/getOfferCategory.scss';
 
 function GetOfferCategory() {
 
@@ -14,7 +13,7 @@ function GetOfferCategory() {
             <div className="cards-list">
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferFoldingWindow'>
+                    <Link className='linkText' to='/getOffer/foldingWindow'>
                         <div className="card 1">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categoryKatlanir.jpg')} alt=''></img>
@@ -25,7 +24,7 @@ function GetOfferCategory() {
                 </div>
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferPvc'>
+                    <Link className='linkText' to='/getOffer/pvc'>
                         <div className="card 2">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categoryPvc.jpg')} alt=''></img>
@@ -36,7 +35,7 @@ function GetOfferCategory() {
                 </div>
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferShopping'>
+                    <Link className='linkText' to='/getOffer/shopping'>
                         <div className="card 4">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categoryMagaza.jpg')} alt=''></img>
@@ -47,7 +46,7 @@ function GetOfferCategory() {
                 </div>
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferShowerBox'>
+                    <Link className='linkText' to='/getOffer/showerBox'>
                         <div className="card 3">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categoryDusakabin.jpg')} alt=''></img>
@@ -58,7 +57,7 @@ function GetOfferCategory() {
                 </div>
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferSwatter'>
+                    <Link className='linkText' to='/getOffer/swatter'>
                         <div className="card 4">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categorySineklik.jpg')} alt=''></img>
@@ -69,7 +68,7 @@ function GetOfferCategory() {
                 </div>
 
                 <div className='categoryCardOne'>
-                    <Link className='linkText' to='/getOfferAluminumHandrail'>
+                    <Link className='linkText' to='/getOffer/aluminumHandrail'>
                         <div className="card 4">
                             <div className="card_image">
                                 <img src={require('../assets/images/category/categoryKorkuluk.jpg')} alt=''></img>

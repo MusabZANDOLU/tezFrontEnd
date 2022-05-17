@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-
 import '../assets/scss/products.scss';
 
 function Products() {
@@ -33,7 +33,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/pvc"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
@@ -58,7 +59,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Bronz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/foldingWindow"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
@@ -83,7 +85,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/pvc"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
@@ -108,7 +111,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/pvc"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
@@ -133,7 +137,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/shopping"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
@@ -158,13 +163,14 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/showerBox"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
                     <div className='products-all-table'>
                         <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/otokapi.jpg')} alt='' />
+                            <img className='product-logo' src={require('../assets/images/product/otokapi.png')} alt='' />
                             <div className='prdct-text'>
                                 <div className='borders'>
                                     <div className='product-name'>Ürün Adı</div>
@@ -183,38 +189,14 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Gri</div>
                                 </div>
                             </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='prod-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/shopping"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 
                     <div className='products-all-table'>
                         <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/urunler.jpg')} alt='' />
-                            <div className='prdct-text'>
-                                <div className='borders'>
-                                    <div className='product-name'>Ürün Adı</div>
-                                    <div className='product-name-contnt'>Cam Modelleri</div>
-                                </div>
-                                <div className='borders'>
-                                    <div className='product-title'>Ürün Kalınlığı</div>
-                                    <div className='product-contnt'>12mm, 16mm</div>
-                                </div>
-                                <div className='borders'>
-                                    <div className='product-title'>Ürün Modelleri</div>
-                                    <div className='product-contnt'>Standart, Isı Cam, Reflekte Cam, Füme Cam, Karolajlı Cam</div>
-                                </div>
-                                <div className='borders'>
-                                    <div className='product-title'>Ürün Renkleri</div>
-                                    <div className='product-contnt'>Şeffaf, Filmli</div>
-                                </div>
-                            </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
-                        </div>
-                    </div>
-
-                    <div className='products-all-table'>
-                        <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/sineklik.jpg')} alt='' />
+                            <img className='product-logo' src={require('../assets/images/product/sineklik.png')} alt='' />
                             <div className='prdct-text'>
                                 <div className='borders'>
                                     <div className='product-name'>Ürün Adı</div>
@@ -233,24 +215,8 @@ function Products() {
                                     <div className='product-contnt'>Beyaz, Altın Meşe, Antrasit Gri, Budaklı Meşe, Fındık, Gri</div>
                                 </div>
                             </div>
-                            <div className='comp-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
-                        </div>
-                    </div>
-
-                    <div className='products-all-table'>
-                        <div className='product-sttng'>
-                            <img className='product-logo' src={require('../assets/images/product/aksesuar.jpg')} alt='' />
-                            <div className='prdct-text'>
-                                <div className='borders'>
-                                    <div className='product-name'>Aksesuar Ürünleri</div>
-                                    <div className='product-name-contnt'>Pvc Pencere & Kapılar, Alüminyum Pencere & Kapılar, Sürme & Volkswagen Kapılar, Camlar</div>
-                                </div>
-                                <div className='borders'>
-                                    <div className='product-title'>Aksesuarlar</div>
-                                    <div className='product-contnt'>Pencere & Kapı Kolları, Duşakabin Kolları, Cam Karolajları</div>
-                                </div>
-                            </div>
-                            <div className='prod-url'>Ürünle ilgili teklif almak için <a href="/getOffer"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+                            <hr />
+                            <div className='comp-url'>Ürünle ilgili teklif almak için <Link to="/getOffer/swatter"><i className="fa-solid fa-link"></i></Link> tıklayınız</div>
                         </div>
                     </div>
 

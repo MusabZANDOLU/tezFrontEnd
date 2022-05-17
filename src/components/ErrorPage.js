@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/scss/errorPage.scss';
 
-
 function ErrorPage() {
-
 	return (
 		<div className='ErrorPageAll'>
 			<div className='errorContent'>
@@ -13,9 +11,9 @@ function ErrorPage() {
 				<hr />
 
 				<div className="errContainer">
-					<div className="typed-out">Site dışında bir url girdiniz. Lütfen ana sayfaya dönünüz!</div>
+					<div className="typed-out">Site dışında bir url girdiniz. Lütfen giriş sayfasına dönünüz!</div>
 					<div className="frame">
-						<Link to='/'><button className="errorBtn btn-16">ANA SAYFA</button></Link>
+						<Link to='/login'><button className="errorBtn btn-16">GİRİŞ YAP</button></Link>
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,6 @@ function carousel() {
             slidesToSlide: 1
         }
     };
-
     return (
         <div>
             <Carousel
@@ -35,7 +34,6 @@ function carousel() {
                 autoPlaySpeed={2000}
                 keyBoardControl={true}
                 customTransition="all 4"
-                // transitionDuration={1000}
                 containerClassName="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClassName="custom-dot-list-style"
@@ -46,7 +44,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/pvc.jpg')} alt='' />
                         <div className="layers">
                             <h3>PVC Cam & Kapı Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -55,7 +52,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/cambalkonanasayfa.jpg')} alt='' />
                         <div className="layers">
                             <h3>Katlanır & Sürme Cam Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -64,7 +60,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/kepeng.jpg')} alt='' />
                         <div className="layers">
                             <h3>Otomatik Kepeng Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -73,7 +68,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/dusakabin.jpg')} alt='' />
                         <div className="layers">
                             <h3>Duşakabin Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/products">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -82,7 +76,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/celikkapi.jpg')} alt='' />
                         <div className="layers">
                             <h3>Çelik Kapı Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -91,7 +84,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/otomatik-kapi.jpg')} alt='' />
                         <div className="layers">
                             <h3>Otomatik Kapı Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>
@@ -100,7 +92,6 @@ function carousel() {
                         <img src={require('../assets/images/slider/otomatik-panjur.jpg')} alt='' />
                         <div className="layers">
                             <h3>Otomatik Panjur Modelleri</h3>
-                            {/* <a className='urun-detay-buton' href="/">Ürün Detayı</a> */}
                         </div>
                     </div>
                 </div>

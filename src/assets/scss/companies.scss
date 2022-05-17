@@ -1,99 +1,91 @@
-.companies-all-content{
-    padding-top: 4%;
-    font-weight: bold;
-    background-color: #ecf0f3;
+.companies-all-content {
+  padding-top: 4%;
+  font-weight: bold;
+  background-color: #ecf0f3;
+  height: 100%;
 }
 
-.companies-text{
-    text-align: center;
-    font-size: 50px;
+.companies-text {
+  text-align: center;
+  font-size: 50px;
 }
 
-.companies-all-table{
-    display: flex;
-    flex-wrap: wrap;
+.companies-all-table {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.companies-table{
-    padding: 1%;
-    width: 48%;
-    height: 100%;
+.companies-table {
+  padding: 1%;
+  width: 48%;
+  height: 100%;
 }
 
-.company-sttng{
-    // padding: 2%;
-    // margin-top: 5px;
-    // border: 2px;
-    // border: 1px solid;
-    // border-radius: 5px;
-    // position: relative;
-    top: 0;
-    // transition: top ease 0.5s;
-    padding: 48px 64px;
-    border-radius: 16px;
-    background: #ecf0f3;
-    box-shadow:
-      4px 4px 4px 0px #d1d9e6 inset,
-      -4px -4px 4px 0px #ffffff inset;
-    margin: 2%;
+.company-sttng {
+  top: 0;
+  padding: 48px 64px;
+  border-radius: 16px;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  margin: 2%;
+  height:180px;
 }
 
-.company-sttng:hover{
-    // box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 5px 20px 10px rgb(62, 55, 78, 0.9);
-    border-start-start-radius: 25px;
-    border-bottom-right-radius: 25px;
-    top: -10px;
+.company-sttng:hover {
+  // box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 20px 10px rgb(62, 55, 78, 0.9);
+  border-start-start-radius: 25px;
+  border-bottom-right-radius: 25px;
+  top: -10px;
 }
 
-.cmpny-text{
-    padding: 0.5%;
-    width: 100%;
-    
+.cmpny-text {
+  padding: 0.5%;
+  width: 100%;
 }
 
-.company-logo{
-    width: 100px;
-    height: 100px;
-    text-align: center;
+.company-logo {
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
-.company-title{
-    float: left;
-    color: #000cff;
-    font-weight: bolder;
-    width: 150px;
-    padding-left: 1%;
+.company-title {
+  float: left;
+  color: #000cff;
+  font-weight: bolder;
+  width: 150px;
+  padding-left: 1%;
 }
 
-.company-contnt{
-    font-size: medium;
+.company-contnt {
+  font-size: medium;
 }
 
-.company-name{
-    padding-left: 1%;
-    color: blue;
-    font-weight: bolder;
-    float: left;
-    width: 150px;
+.company-name {
+  padding-left: 1%;
+  color: blue;
+  font-weight: bolder;
+  float: left;
+  width: 150px;
 }
 
-.company-name-contnt{
-    color: rgb(110, 110, 172);
-    font-weight: bold;
+.company-name-contnt {
+  color: rgb(110, 110, 172);
+  font-weight: bold;
 }
 
-.border{
-    border-style: ridge !important;
-    border: 1.8px;
+.border {
+  border-style: ridge !important;
+  border: 1.8px;
 }
 
-.comp-url{
-    text-align: right;
-    padding: 1%;
+.comp-url {
+  text-align: right;
+  padding: 1%;
 }
 
-.comp-url:hover i{
-    font-size: 20px;
-    transition: 0.5s;
+.comp-url:hover i {
+  font-size: 20px;
+  transition: 0.5s;
 }

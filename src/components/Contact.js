@@ -9,7 +9,7 @@ function Contact() {
       <div className='backg'>
         <div className='dash'>
           <div className='about'>İLETİŞİM</div>
-          <div className='slogan'>Tel: 0500 000 0000</div>
+          <div className='slogan'>Tel: 0555 000 0000</div>
           <div className='about-icerik'>
             Sitemiz, daha kolay, daha kısa zamanda ve daha uygun maliyette işlerinizi yaptırabilmeniz için siz değerli kullanıcılarımıza **.**.2022 tarihinde hizmete geçmiştir. Sizlerle yardımcı olmaktan mutluluk duyuyor, bizi tercih ettiğiniz için çok teşekkür ediyoruz.
           </div>
