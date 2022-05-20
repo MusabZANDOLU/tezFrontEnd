@@ -52,7 +52,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Açıklamam: Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                        Açıklamam: Aynı ürünün şeffaf camlı olan fiyatını da yazabilirseniz sevinirim. Kolay gelsin. İyi çalışmalar.
                       </div>
                     </label>
                   </div>
@@ -80,25 +80,25 @@ function MyOffers() {
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">Ürün: Katlanır Cam</div>
+                      <div className="textGiveOfferCss">Ürün: Sürme Cam</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">Detayar: 8 m</div>
+                      <div className="textGiveOfferCss">Detayar: 10 m</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">2.50 m</div>
+                      <div className="textGiveOfferCss">2.20 m</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">L Balkon (2 Cephe)</div>
+                      <div className="textGiveOfferCss">U Balkon (3 Cephe)</div>
                     </label>
                   </div>
                   <div>
@@ -113,7 +113,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Açıklamam: dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.
+                        Açıklamam: Aynı üründen iki tane almak istesem ne kadar iskonto yapabilirsiniz.
                       </div>
                     </label>
                   </div>
@@ -121,7 +121,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Teklif Tarihim: 19.08.2022
+                        Teklif Tarihim: 09.02.2021
                       </div>
                     </label>
                   </div>
@@ -174,7 +174,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Açıklamam: dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.
+                        Açıklamam: Yanlarda duvar değil ağaç kirişler var. Mermer yok.
                       </div>
                     </label>
                   </div>
@@ -182,7 +182,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Teklif Tarihim: 19.08.2022
+                        Teklif Tarihim: 10.10.2020
                       </div>
                     </label>
                   </div>
@@ -202,31 +202,31 @@ function MyOffers() {
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">Ürün: Katlanır Cam</div>
+                      <div className="textGiveOfferCss">Ürün: Pvc Kapı</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">Detayar: 8 m</div>
+                      <div className="textGiveOfferCss">Detayar:  80cm </div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">2.50 m</div>
+                      <div className="textGiveOfferCss">2.20 m</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">L Balkon (2 Cephe)</div>
+                      <div className="textGiveOfferCss">2 adet</div>
                     </label>
                   </div>
                   <div>
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
-                      <div className="textGiveOfferCss">Reflekte</div>
+                      <div className="textGiveOfferCss">Kararsızım/ Farketmez</div>
                     </label>
                   </div>
                 </div>
@@ -235,7 +235,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Açıklamam: dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.
+                        Açıklamam: Şeffaf camlı fiyatınıda ek olarak yazar mısınız. İyi günler.
                       </div>
                     </label>
                   </div>
@@ -243,7 +243,7 @@ function MyOffers() {
                     <label className="label">
                       <i className="fa-solid fa-circle-check tiks"></i>
                       <div className="textGiveOfferCss">
-                        Teklif Tarihim: 19.08.2022
+                        Teklif Tarihim: 01.07.2021
                       </div>
                     </label>
                   </div>

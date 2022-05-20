@@ -65,7 +65,7 @@ function GiveOffer() {
                         <div>
                           <label className="labelModal">
                             <div className="textGivePrev">Teklif Tarihi:</div>
-                            <div className="textModalCssDate"><i className="fa-solid fa-circle pointModalIcon"></i> 19.08.2022</div>
+                            <div className="textModalCssDate"><i className="fa-solid fa-circle pointModalIcon"></i> 19.01.2021</div>
                           </label>
                         </div>
                       </div>
