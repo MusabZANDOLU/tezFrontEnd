@@ -7,6 +7,7 @@ $color-white: #fff;
   padding-left: 2%;
   padding-right: 2%;
   background-color: #ecf0f3;
+  height: 100%;
 }
 
 .giveOfferAllCard {
@@ -49,7 +50,12 @@ $color-white: #fff;
   margin: 40px auto;
   padding-top: 0px;
   position: relative;
-  width: 160px;
+  width: 100%;
+  left: 0%;
+  position: absolute;
+  top: 0%;
+  backdrop-filter: blur(20px);
+  background-color: transparent;
   .modalBtn {
     display: block;
     color: #fff;
@@ -67,19 +73,16 @@ $color-white: #fff;
   }
   .modalContent,
   .modalBackdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
     cursor: pointer;
     transition: opacity 0.2s ease-in;
+    width: 80%;
+    margin: 5% 10% 0 10%;
   }
   .modalClose {
     color: #aaa;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 10%;
+    top:10%;
     padding-top: 3px;
     background: #fff;
     font-size: 16px;

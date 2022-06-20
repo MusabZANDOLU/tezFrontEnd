@@ -39,9 +39,9 @@ nav {
 
 .nav-links {
   /*Navbar sabit kalması için*/
-  flex: 1;
-  align-items: center;
-  text-align: left;
+  // flex: 1;
+  // align-items: center;
+  // text-align: left;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -62,7 +62,7 @@ nav {
 .nav-links ul li {
   list-style: none;
   display: inline-block; /* navbarı yatay yapmak için */
-  padding: 15px 20px;
+  padding: 15px 10px;
   position: relative;
   color: white;
 }
@@ -71,7 +71,7 @@ nav {
   padding: 8px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .nav-links ul li::after {
@@ -120,41 +120,38 @@ nav {
   cursor: pointer;
 }
 
-nav i {
-  display: none !important;
-}
 
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background-color: crimson;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-    display: flex;
-    justify-content: space-between;
-  }
-  nav i {
-    display: block !important;
-    color: white;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 20px;
-  }
-}
+// @media (max-width: 768px) {
+//   .text-box h1 {
+//     font-size: 20px;
+//   }
+//   .nav-links ul li {
+//     display: block;
+//   }
+//   .nav-links {
+//     position: absolute;
+//     background-color: crimson;
+//     height: 100vh;
+//     width: 200px;
+//     top: 0;
+//     right: -200px;
+//     text-align: left;
+//     z-index: 2;
+//     transition: 1s;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   nav i {
+//     display: block !important;
+//     color: white;
+//     margin: 10px;
+//     font-size: 22px;
+//     cursor: pointer;
+//   }
+//   .nav-links ul {
+//     padding: 20px;
+//   }
+// }
 
 /*-------------------- ADIMLAR --------------------*/
 
@@ -166,15 +163,7 @@ nav i {
   padding: 8px;
 }
 
-p {
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 22px;
-}
-
-.row {
+.stepRow {
   padding: 10px;
   margin-top: 5%;
   display: flex;
@@ -198,18 +187,12 @@ p {
   color: #777;
 }
 
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 10px 0;
-}
-
 .categori-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 700px) {
-  .row {
+  .stepRow {
     flex-direction: column;
   }
 }
@@ -318,8 +301,6 @@ h3 {
 
 .iceriks {
   display: flex;
-  // flex: 0 0 50%;
-  // max-width: 50%
   padding: 5%;
 }
 
@@ -340,7 +321,7 @@ h3 {
 }
 
 .icerik-resim-1 {
-  width: 200px;
+  width: 60%;
   position: relative;
 }
 
@@ -361,7 +342,7 @@ h3 {
 }
 
 .icerik-resim-2 {
-  width: 300px;
+  width: 60%;
   position: relative;
 }
 

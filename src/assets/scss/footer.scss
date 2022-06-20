@@ -17,6 +17,9 @@
     padding: 0.5%;
 }
 
+.footer-text{
+    font-size: 15px;
+}
 
 .f-tw{
     color: rgb(26, 114, 141);
@@ -32,3 +35,11 @@
     color: black;
     padding: 0.5%;
 }
+
+@media (max-width: 700px) {
+    .footer-text{
+      font-size: 10px;
+      text-align: center;
+      padding: 5%;
+    }
+  }

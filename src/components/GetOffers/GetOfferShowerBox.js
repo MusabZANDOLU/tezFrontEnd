@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Dashboard/Navbar';
 import alertify from 'alertifyjs';
-import '../assets/scss/getOffer.scss';
+import '../../assets/scss/getOffer.scss';
+import { useNavigate } from 'react-router';
+import axios from 'axios';
+import 'alertifyjs/build/css/alertify.min.css';
 
 function info1() {
   alertify.alert('Seçilecek Ürünler Hakkında', 'Hangi tarz duş kabini istediğinizi seçiniz. Altında plastik havuz olanlar tekneli, olmayanlar teknesiz olarak adlandırılır. Duvardan duvara ve oval seçeneklerinde de tekneli ürünler mevcuttur. hangisini ne şekilde istediğinizi açıklama olarak yazabilirsiniz.');
@@ -27,6 +30,23 @@ function GetOfferShowerBox() {
   const [inputCheck1, setInputCheck1] = useState();
   const [inputCheck2, setInputCheck2] = useState();
   const [textArea, setTextArea] = useState();
+
+
+  const navigate = useNavigate();
+  const saveOffer = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/Offers', {
+        productName: inputCheck,
+        productWidth: inputCheck1,
+        productHeight: inputCheck2,
+        userComment: textArea,
+      })
+      navigate("/")
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <div>
@@ -73,7 +93,7 @@ function GetOfferShowerBox() {
                 <hr />
                 <button onClick={info1} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                 <hr />
-                <Link className="getOfferLinkButton" to='/getOfferCategory'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
+                <Link className="getOfferLinkButton" to='/getOffer/category'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
               </div>
             </div>
           </div> : divs === 2 ?
@@ -303,7 +323,7 @@ function GetOfferShowerBox() {
                         </div>
                       </div>
                       <div className="buttons">
-                        <button className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
+                        <button onClick={(e) => saveOffer(e)} className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
                         <hr />
                         <button onClick={info4} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                         <hr />

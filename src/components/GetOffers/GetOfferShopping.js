@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Dashboard/Navbar';
 import { Link } from 'react-router-dom';
 import alertify from 'alertifyjs';
-import '../assets/scss/getOffer.scss';
+import { useNavigate } from 'react-router';
+import axios from 'axios';
+import '../../assets/scss/getOffer.scss';
+import 'alertifyjs/build/css/alertify.min.css';
 
 function info1() {
   alertify.alert('Ürünler Hakkında', 'Montaj yaptırmak istediğiniz ürün türünü seçiniz. Ürünler alüminyumdur.');
@@ -19,6 +22,7 @@ function info3() {
 function info4() {
   alertify.alert('Balkon Yükseklik Ölçüsü Hakkında', 'Montaj yerinin üstünden altına metre yardımıyla alabileceğiniz ölçümdür. En sağlıklı ölçümler için sol, orta ve sağ olarak farklı yerlerden boy ölçümü alıp ortalamasını seçerek daha yakın teklifler alabilirsiniz.');
 }
+
 function info6() {
   alertify.alert('Teklif Kontrol', 'Teklifinizi aşağıdaki kutudan kontrol ediniz. Eğer istemediğiniz ya da yanlış olan seçim varsa o adıma geri gidip düzenleyebilirsiniz.');
 }
@@ -32,6 +36,24 @@ function GetOfferShopping() {
   const [inputCheck3, setInputCheck3] = useState();
   const [textArea, setTextArea] = useState();
 
+
+  const navigate = useNavigate();
+  const saveOffer = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/Offers', {
+        productName: inputCheck,
+        productWidth: inputCheck1,
+        productHeight: inputCheck2,
+        productPlace: inputCheck3,
+        userComment: textArea,
+      })
+      navigate("/myOffers")
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div className='getOfferShoppingAll'>
       <Navbar />
@@ -41,7 +63,7 @@ function GetOfferShopping() {
 
           <div id='step1Shop'>
             <div className='UserSettingAll'>
-              <div className='getoffer-text'>(1.Adım)<br /><hr />Mağazanız için vermek istediğiniz ürünü seçiniz</div>
+              <div className='getoffer-text'>(1.Adım)<br /><hr />Teklif vermek istediğiniz ürünü seçiniz</div>
               <div className="radiogroup">
                 <div className="wrapper">
                   <input className="state" type="radio" name="productNameShop" id="a" value="Otomatik Kapı" onChange={e => setInputCheck(e.target.value)} />
@@ -77,7 +99,7 @@ function GetOfferShopping() {
                 <hr />
                 <button onClick={info1} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                 <hr />
-                <Link className="getOfferLinkButton" to='/getOfferCategory'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
+                <Link className="getOfferLinkButton" to='/getOffer/category'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
               </div>
             </div>
           </div> : divs === 2 ?
@@ -419,7 +441,7 @@ function GetOfferShopping() {
 
                         </div>
                         <div className="buttons">
-                          <button className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
+                          <button onClick={(e) => saveOffer(e)} className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
                           <hr />
                           <button onClick={info6} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                           <hr />

@@ -1,14 +1,14 @@
-.backg{
-    min-height: 50vw;
+.contactAll{
     width: 100%;
+    height: 100vh;
     background-image: url(../images/dashboard/about-wall.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-.dash{
-  padding-top: 15%;
+.contactDash{
+  padding-top: 10%;
 }
 
 .about{
@@ -23,16 +23,16 @@
 }
 
 .slogan{
-  text-align: center;
+  padding-top: 5%;
   font-size: 20px;
   letter-spacing: 3px;
-  text-shadow:1px 1px 15px lightblue;
-  color:rgb(255, 255, 255);
+  font-weight: bold;
+  color:rgb(0, 0, 0);
   text-align: center;
   font-family: Roboto;
 }
 
-.about-icerik{
+.aboutContent{
   padding: 7%;
   letter-spacing: 3px;
   text-shadow:1px 1px 15px lightblue;
@@ -43,6 +43,24 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .contactDash{
+    padding-top: 50%;
+  }
+  .about{
+    font-size: 40px;
+  }
+  .slogan{
+    font-size: 15px;
+  }
+  .aboutContent{
+    padding-top: 10%;
+    font-size: 15 px;
+  }
+  .icons-container{
+    padding-top: 30%;
+  }
+}
 // ------------------------------Sosyal medya ikonları-----------------------
 
 .icons-container{

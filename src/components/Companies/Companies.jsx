@@ -1,7 +1,6 @@
-import React from 'react';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import '../assets/scss/companies.scss';
+import Footer from "../Dashboard/Footer";
+import Navbar from "../Dashboard/Navbar";
+import "../../assets/scss/companies.scss";
 
 function Companies() {
   return (
@@ -107,6 +106,102 @@ function Companies() {
               <div className='comp-url'>Firma internet sitesi için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
             </div>
           </div>
+          <div className='companies-table'>
+            <div className='company-sttng'>
+              <div className='cmpny-text'>
+                <div className='border'>
+                  <div className='company-name'>Firma Adı</div>
+                  <div className='company-name-contnt'>Ege Pen</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Firma Yetkilisi</div>
+                  <div className='company-contnt'>Ahmet Ege</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Telefon</div>
+                  <div className='company-contnt'>0500 000 0002</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>E-posta</div>
+                  <div className='company-contnt'>ege@deneme.com</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Adres</div>
+                  <div className='company-contnt'>Serdivan / SAKARYA</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Verilen hizmetler</div>
+                  <div className='company-contnt'>Duş Kabini, Çelik Kapı</div>
+                </div>
+              </div>
+              <hr/>
+              <div className='comp-url'>Firma internet sitesi için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+            </div>
+          </div>
+          <div className='companies-table'>
+            <div className='company-sttng'>
+              <div className='cmpny-text'>
+                <div className='border'>
+                  <div className='company-name'>Firma Adı</div>
+                  <div className='company-name-contnt'>Ege Pen</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Firma Yetkilisi</div>
+                  <div className='company-contnt'>Ahmet Ege</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Telefon</div>
+                  <div className='company-contnt'>0500 000 0002</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>E-posta</div>
+                  <div className='company-contnt'>ege@deneme.com</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Adres</div>
+                  <div className='company-contnt'>Serdivan / SAKARYA</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Verilen hizmetler</div>
+                  <div className='company-contnt'>Duş Kabini, Çelik Kapı</div>
+                </div>
+              </div>
+              <hr/>
+              <div className='comp-url'>Firma internet sitesi için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+            </div>
+          </div>
+          <div className='companies-table'>
+            <div className='company-sttng'>
+              <div className='cmpny-text'>
+                <div className='border'>
+                  <div className='company-name'>Firma Adı</div>
+                  <div className='company-name-contnt'>Ege Pen</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Firma Yetkilisi</div>
+                  <div className='company-contnt'>Ahmet Ege</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Telefon</div>
+                  <div className='company-contnt'>0500 000 0002</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>E-posta</div>
+                  <div className='company-contnt'>ege@deneme.com</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Adres</div>
+                  <div className='company-contnt'>Serdivan / SAKARYA</div>
+                </div>
+                <div className='border'>
+                  <div className='company-title'>Verilen hizmetler</div>
+                  <div className='company-contnt'>Duş Kabini, Çelik Kapı</div>
+                </div>
+              </div>
+              <hr/>
+              <div className='comp-url'>Firma internet sitesi için <a href="https://www.google.com/"><i className="fa-solid fa-link"></i></a> tıklayınız</div>
+            </div>
+          </div>
           
         </div>
       </div>
@@ -117,4 +212,3 @@ function Companies() {
   )
 }
 export default Companies;
-

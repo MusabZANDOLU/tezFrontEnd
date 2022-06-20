@@ -24,6 +24,54 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  
+  .UserSettingAll {
+    align-items: center;
+    display: block;
+    justify-content: center;
+  }
+  .textOfferCss {
+    margin-left: 6px;
+    opacity: 0.8;
+    transition: opacity 0.2s linear, transform 0.3s ease-out;
+    color: black;
+    font-size: 17px !important;
+  }
+  .label {
+    display: inline-flex;
+    align-items: center;
+    cursor: context-menu;
+    color: #0092fa;
+  }
+  .getoffer-text {
+    font-weight: bolder;
+    font-size: 15px !important;
+    width: 50% !important;
+    text-align: center !important;
+  }
+  .getOfferButton {
+    width: 50%;
+    color: var(--color);
+    transition: 0.25s;
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: rgb(236, 236, 245);
+      background-color: rgb(37, 37, 37);
+    }
+  }
+  .getOfferLinkButton {
+    background: none;
+    border: 1px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    text-decoration: none;
+  }
+}
+
 .radiogroup {
   padding: 25px 30px;
   border-radius: 16px;
@@ -124,7 +172,8 @@
   opacity: 0;
 }
 
-.state:focus ~ .label .textOfferCss { //seçili inputun text olayı
+.state:focus ~ .label .textOfferCss {
+  //seçili inputun text olayı
   transform: translate3d(8px, 0, 0);
   color: black;
   font-weight: bold;
@@ -167,6 +216,7 @@ $colors: (
 }
 
 .getOfferButton {
+  text-decoration: none;
   color: var(--color);
   transition: 0.25s;
 
@@ -186,7 +236,9 @@ $colors: (
   margin: 0.5em;
   padding: 1em 2em;
   border-radius: 5px;
+  text-align: center;
 }
+
 .getOffer-input {
   padding: 18px 35px;
   border-radius: 16px;
@@ -212,24 +264,24 @@ $colors: (
   padding-bottom: 5%;
 }
 
-.getOfferLinkButton {
-  background: none;
-  border: 1px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-  text-decoration: none;
-}
+// .getOfferLinkButton {
+//   background: none;
+//   border: 1px solid;
+//   font: inherit;
+//   line-height: 1;
+//   margin: 0.5em;
+//   padding: 1em 2em;
+//   text-decoration: none;
+// }
 
-.getOfferLinkButton {
-  color: var(--color);
-  transition: 0.25s;
+// .getOfferLinkButton {
+//   color: var(--color);
+//   transition: 0.25s;
 
-  &:hover,
-  &:focus {
-    border-color: var(--hover);
-    color: rgb(236, 236, 245);
-    background-color: rgb(37, 37, 37);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     border-color: var(--hover);
+//     color: rgb(236, 236, 245);
+//     background-color: rgb(37, 37, 37);
+//   }
+// }

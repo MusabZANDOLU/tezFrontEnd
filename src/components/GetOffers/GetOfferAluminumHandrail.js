@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Dashboard/Navbar';
+import axios from 'axios';
 import alertify from 'alertifyjs';
-import '../assets/scss/getOffer.scss';
+import '../../assets/scss/getOffer.scss';
+import 'alertifyjs/build/css/alertify.min.css';
 
 function info1() {
     alertify.alert('Seçilecek Ürünler Hakkında', 'Ölçülerinizi balkonun eni ve yüksekliği olacak şekilde alınız. Verilen teklifler yalnızca yaklaşık sonuçları verebilir. Kesin bilgi içermemektedir!');
@@ -38,6 +41,24 @@ function GetOfferAluminumHandrail() {
     const [inputCheck4, setInputCheck4] = useState();
     const [textArea, setTextArea] = useState();
 
+
+    const navigate = useNavigate();
+    const saveOffer = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:5000/Offers', {
+                productName:inputCheck,
+                productWidth:inputCheck1,
+                productHeight:inputCheck2,
+                productPlace:inputCheck3,
+                productWindow:inputCheck4,
+                userComment:textArea,
+            })
+            navigate("/")
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <div className='denemeClip'>
             <div className='getOfferPvcContent'>
@@ -51,28 +72,28 @@ function GetOfferAluminumHandrail() {
                             <div className='getoffer-text'>(1.Adım)<br /><hr />Teklif vermek istediğiniz alüminyum küpeşte için mekan seçiniz.</div>
                             <div className="radiogroup">
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="swatterName" id="a" value="Balkon" onChange={e=>setInputCheck(e.target.value)}/>
+                                    <input className="state" type="radio" name="swatterName" id="a" value="Balkon" onClick={e=>setInputCheck(e.target.value)}/>
                                     <label className="label" htmlFor="a">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>Balkon</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="swatterName" id="b" value="Merdiven" onChange={e=>setInputCheck(e.target.value)}/>
+                                    <input className="state" type="radio" name="swatterName" id="b" value="Merdiven" onClick={e=>setInputCheck(e.target.value)}/>
                                     <label className="label" htmlFor="b">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>Merdiven</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="swatterName" id="e" value="Pencere Önü" onChange={e=>setInputCheck(e.target.value)}/>
+                                    <input className="state" type="radio" name="swatterName" id="e" value="Pencere Önü" onClick={e=>setInputCheck(e.target.value)}/>
                                     <label className="label" htmlFor="e">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>Pencere Önü</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="swatterName" id="f" value="Teras" onChange={e=>setInputCheck(e.target.value)}/>
+                                    <input className="state" type="radio" name="swatterName" id="f" value="Teras" onClick={e=>setInputCheck(e.target.value)}/>
                                     <label className="label" htmlFor="f">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>Teras</span>
@@ -80,11 +101,11 @@ function GetOfferAluminumHandrail() {
                                 </div>
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton" onClick={()=>{setDivs(2)}}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
+                                <button className="getOfferButton" onClick={() => { inputCheck? setDivs(2) : alert("Önce seçim yapınız.") }}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
                                 <hr />
                                 <button onClick={info1} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />
-                                <Link className="getOfferLinkButton" to='/getOfferCategory'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
+                                <Link className="getOfferLinkButton" to='/getOffer/category'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
                             </div>
                         </div>
                     </div>: divs===2?
@@ -94,49 +115,49 @@ function GetOfferAluminumHandrail() {
                             <div className='getoffer-text'>(2.Adım)<br /><hr />Montaj yapılacak yerin uzunluğunu seçiniz.</div>
                             <div className="radiogroup">
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="a1" value="2 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="a1" value="2 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="a1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>2 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="b1" value="3 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="b1" value="3 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="b1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>3 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="c1" value="4 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="c1" value="4 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="c1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>4 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="d1" value="5 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="d1" value="5 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="d1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>5 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="e1" value="6 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="e1" value="6 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="e1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>6 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="f1" value="8 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="f1" value="8 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="f1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>8 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="g1" value="10 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="g1" value="10 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="g1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>10 m</span>
@@ -146,49 +167,49 @@ function GetOfferAluminumHandrail() {
 
                             <div className="radiogroup">
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="h1" value="12 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="h1" value="12 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="h1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>12 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="i1" value="15 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="i1" value="15 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="i1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>15 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="j1" value="17 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="j1" value="17 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="j1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>17 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="k1" value="20 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="k1" value="20 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="k1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>20 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="l1" value="25 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="l1" value="25 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="l1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>25 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="m1" value="30 m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="m1" value="30 m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="m1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>30 m</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeWidth" id="n1" value="40+ m" onChange={e=>setInputCheck1(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeWidth" id="n1" value="40+ m" onClick={e=>setInputCheck1(e.target.value)}/>
                                     <label className="label" htmlFor="n1">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>40+ m</span>
@@ -196,7 +217,7 @@ function GetOfferAluminumHandrail() {
                                 </div>
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton" onClick={()=>{setDivs(3)}}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
+                                <button className="getOfferButton" onClick={() => { inputCheck? setDivs(3) : alert("Sonraki adım için lütfen önce seçim yapınız.") }}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
                                 <hr />
                                 <button className="getOfferButton" onClick={info2}><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />
@@ -210,49 +231,49 @@ function GetOfferAluminumHandrail() {
                             <div className='getoffer-text'>(3.Adım)<br /><hr />Küpeştenin yüksekliği için seçim yapınız.</div>
                             <div className="radiogroup">
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="a2" value="30 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="a2" value="30 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="a2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>30 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="b2" value="35 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="b2" value="35 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="b2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>35 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="c2" value="40 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="c2" value="40 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="c2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>40 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="d2" value="45 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="d2" value="45 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="d2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>45 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="e2" value="50 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="e2" value="50 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="e2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>50 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="f2" value="55 cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="f2" value="55 cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="f2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>55 cm</span>
                                     </label>
                                 </div>
                                 <div className="wrapper">
-                                    <input className="state" type="radio" name="sizeHeight" id="g2" value="60+ cm" onChange={e=>setInputCheck2(e.target.value)}/>
+                                    <input className="state" type="radio" name="sizeHeight" id="g2" value="60+ cm" onClick={e=>setInputCheck2(e.target.value)}/>
                                     <label className="label" htmlFor="g2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>60+ cm</span>
@@ -260,7 +281,7 @@ function GetOfferAluminumHandrail() {
                                 </div>
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton" onClick={()=>{setDivs(4)}}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
+                                <button className="getOfferButton" onClick={() => { inputCheck? setDivs(4) : alert("Sonraki adım için lütfen önce seçim yapınız.") }}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
                                 <hr />
                                 <button className="getOfferButton" onClick={info3}><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />
@@ -310,14 +331,14 @@ function GetOfferAluminumHandrail() {
                                 </div>
                                 <div className="wrapper">
                                     <input className="state" type="radio" name="swatterPiece" id="m2" value="Temperli reflekte camlı gövde" onChange={e=>setInputCheck3(e.target.value)}/>
-                                    <label className="label" htmlFor="l2">
+                                    <label className="label" htmlFor="m2">
                                         <div className="indicator"></div>
                                         <span className='textOfferCss'>Temperli reflekte camlı gövde</span>
                                     </label>
                                 </div>
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton" onClick={()=>{setDivs(5)}}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
+                                <button className="getOfferButton" onClick={() => { inputCheck? setDivs(5) : alert("Sonraki adım için lütfen önce seçim yapınız.") }}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
                                 <hr />
                                 <button className="getOfferButton" onClick={info4}><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />
@@ -374,7 +395,7 @@ function GetOfferAluminumHandrail() {
                                 </div>
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton" onClick={()=>{setDivs(6)}}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
+                                <button className="getOfferButton" onClick={() => { inputCheck? setDivs(6) : alert("Sonraki adım için lütfen önce seçim yapınız.") }}><i className="fa-solid fa-arrow-right-long"></i> Sonraki Adım</button>
                                 <hr />
                                 <button className="getOfferButton" onClick={info5}><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />
@@ -454,7 +475,7 @@ function GetOfferAluminumHandrail() {
 
                             </div>
                             <div className="buttons">
-                                <button className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
+                                <button onClick={(e)=>saveOffer(e)} className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
                                 <hr />
                                 <button onClick={info6} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                                 <hr />

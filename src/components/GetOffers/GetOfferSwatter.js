@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Dashboard/Navbar';
 import alertify from 'alertifyjs';
-import '../assets/scss/getOffer.scss';
+import { useNavigate } from 'react-router';
+import axios from 'axios';
+import '../../assets/scss/getOffer.scss';
+import 'alertifyjs/build/css/alertify.min.css';
+
 
 function info1() {
     alertify.alert('Seçilecek Ürünler Hakkında', 'Plise sineklik akordiyon yapıda ve katlanabilir olarak tasarlanmıştır. Sabit sineklik direkt monte eildiği yerde sabit olarak kalır, menteşeli sineklik açılıp kapanabilen sinekliktir. Sarhoş sineklik serbest yapıda olur sağa ya da sola katlanabilir.');
@@ -38,6 +42,25 @@ function GetOfferSwatter() {
     const[inputCheck3,setInputCheck3]=useState();
     const[inputCheck4,setInputCheck4]=useState();
     const[textArea,setTextArea]=useState();
+    const navigate = useNavigate();
+
+
+    const saveOffer = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:5000/Offers', {
+                productName:inputCheck,
+                productWidth:inputCheck1,
+                productHeight:inputCheck2,
+                productPlace:inputCheck3,
+                productWindow:inputCheck4,
+                userComment:textArea,
+            })
+            navigate("/myOffers")
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     return (
     <div>
@@ -99,7 +122,7 @@ function GetOfferSwatter() {
                             <hr />
                             <button onClick={info1} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                             <hr />
-                            <Link className="getOfferLinkButton" to='/getOfferCategory'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
+                            <Link className="getOfferLinkButton" to='/getOffer/category'><i className="fa-solid fa-house"></i> Kategorilere Dön</Link>
                         </div>
                     </div>
                 </div>: divs===2?
@@ -553,7 +576,7 @@ function GetOfferSwatter() {
 
                         </div>
                         <div className="buttons">
-                            <button className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
+                            <button onClick={(e)=>saveOffer(e)} className="getOfferButton"><i className="fa-solid fa-upload"></i> Teklif Yayınla</button>
                             <hr />
                             <button onClick={info6} className="getOfferButton"><i className="fa-solid fa-circle-question"></i> Bilgi Al</button>
                             <hr />
